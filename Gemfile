@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0'
 # Use Puma as the app server
@@ -37,6 +36,9 @@ gem 'font-awesome-sass', '4.6.2'
 
 # Use hirb for better table visulation on console.
 gem 'hirb', '0.7.3'
+
+# Use devise for user memberships and authentication.
+gem 'devise', '4.2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
