@@ -4,3 +4,6 @@ Membership
   . Basic plan link should point to the regular devise sign up form.
   . Pro plan link should point to custom sign up form
 
+ActiveRecord
+Parameters
+Substitution
