@@ -21,6 +21,9 @@
     <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control' %>
   </div>
   
+  <!-- The fields below use the generic tags to prevent them from being 
+       saved anywhere -->
+  
   <div class="field form-group" >
     <%= label_tag :card_number, "Credit Card Number" %>
     <%= text_field_tag :card_number, nil, name: nil, class: "form-control" %>

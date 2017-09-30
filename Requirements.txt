@@ -10,7 +10,7 @@ Substitution
 
 Stripe Integration
  * Users should have a stripe-customer token in the Users table.
- * Javascript should prevent Pro form from submitting, when users fills it out,
+ * Javascript should prevent Pro form from submitting, after users fills it out,
   and should end card information to Stripe, which will then return a card token.
  * Javascript will then take the care token and the user fields and card token
   to our rails app for validation. Rails app will keep plan info.
