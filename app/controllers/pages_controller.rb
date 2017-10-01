@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   
-  # GET equest for '/' which is our home page
+  # GET request for '/' which is our home page
+
   def home
     @basic_plan = Plan.find(1)
     @pro_plan = Plan.find(2)
