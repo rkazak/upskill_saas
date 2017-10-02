@@ -24,7 +24,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   private
 
   def select_plan
-    unless (params[:plan] == 1 || params[:plan] == 2)
+    unless ( params[:plan] == 1 || params[:plan] == 2 )
+    else
       flash[:notice] = "Please select a valid plan to sign up."
       redirect_to root_url
     end
