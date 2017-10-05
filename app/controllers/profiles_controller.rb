@@ -10,6 +10,9 @@ class ProfilesController < ApplicationController
     #
     @user = User.find( params[:user_id])
     #
+    #.build_<> - from ActiveRecord documentation. build_
+    # used to establish a connection between tables.
+    #
     @profile = @user.build_profile( profile_params )
     if @profile.save
       flash[:success] = "Profile Updated"
@@ -20,7 +23,9 @@ class ProfilesController < ApplicationController
   end
   
   private
+  
   def profile_params
+    # strong assignment, white-listing what's allowed to pass through the form from the user.
     params.require(:profile).permit(:first_name, :last_name, :job_title, :phone_number, :contact_email, :description)
   end
   
