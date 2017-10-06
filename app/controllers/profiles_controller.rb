@@ -28,6 +28,20 @@ class ProfilesController < ApplicationController
     @profile = @user.profile
   end
   
+  # PUT / PATCH /users/:user_id/profile(.:format) 
+  def update
+    # reterieve the current user's resources
+    @user = User.find( params[:user_id] )
+    # reterieve the current user's profile
+    @profile = @user.profile
+    # mass update any edited profile parameters and save (update)
+    if @profile.update_attributes( profile_params )
+      flash[:success] = "Profile Updated"
+      redirect_to user_path(params[:user_id])
+    else
+      render action: :edit
+    end
+  end
   
   private
   
