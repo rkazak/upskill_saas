@@ -1,6 +1,17 @@
+// User index page stypes
+.user-index-avatar {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
 .avatar-show-img {
     width: 128px;
     height: 128px;
+}
+
+.well.white-bg {
+  background-color: #fff;
 }
 
 .well.profile-blocks {
