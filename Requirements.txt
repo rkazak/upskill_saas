@@ -26,3 +26,5 @@ Stripe Integration
   * User should have a profile picture
   * Users should be able to view other user profile
   
+  Some edit...
+  
